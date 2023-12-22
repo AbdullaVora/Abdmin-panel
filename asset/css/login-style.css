@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Play", sans-serif;
+    src: url(../font/Play-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Play", sans-serif;
+    --light: #fff;
+    --gradient-1: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(rgba(0, 242, 255, 0.8)),
+            to(rgba(113, 0, 184, 0.8)));
+    --gradient-2: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(rgba(0, 142, 155, 0.8)),
+            to(rgba(123, 100, 144, 0.8)));
+    --gradient-3: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(rgba(35, 122, 15, 0.8)),
+            to(rgba(50, 120, 190, 0.8)));
+    --gradient-4: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(rgba(16, 112, 153, 0.8)),
+            to(rgba(50, 190, 108, 0.8)));
+    --setting: #6b6e77;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.background-gradient {
+    background: hsla(208, 33%, 21%, 1);
+
+    background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#243748", endColorstr="#4b749f", GradientType=1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.login {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.login .content {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 460px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 10px 15px 30px -3px rgba(0,0,0,0.8);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: url("https://i.postimg.cc/vmK4vkf0/neon-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left img {
+    width: 70px;
+    position: absolute;
+    top: 28%;
+}
+
+.left h1 {
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+}
+
+.right {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.inputbox {
+    margin: 8px 0px;
+    width: 350px;
+    height: fit-content;
+}
+
+input {
+    margin-top: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 28px;
+    text-indent: 9px;
+    border: none;
+    border-radius: 2px;
+
+    background: rgba(128, 128, 128, 0.2);
+}
+
+input:hover {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.right .title h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.inputbox label {
+    font-size: 1em;
+}
+
+input::placeholder {
+    text-indent: 10px;
+}
+
+.create {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+}
+
+.create button {
+    margin-top: 5px;
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+
+    color: #fff;
+    background: #000;
+}
+
+.additional p {
+    margin-top: 5px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.additional p span {
+    color: blue;
+}
+
+.additional p span:hover {
+    text-decoration: underline;
+}
+
+.or {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+button {
+    width: 160px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25px;
+
+    background: none;
+    border: 2px solid #000;
+}
